@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Measurement Converter</string>
+    <string name="tvTitleHINT">Conversion Title Shown Here</string>
+    <string name="distanceHINT">Input Distance Value</string>
+    <string name="tvResultsHINT">Conversion Results Show Here</string>
+    <string name="btnConvertMilesToKm">Convert M to KM</string>
+    <string name="btnConvertKmToMiles">Convert KM to M</string>
+    <string name="btnClear">Clear</string>
+    <string name="btnExit">Exit</string>
+</resources>

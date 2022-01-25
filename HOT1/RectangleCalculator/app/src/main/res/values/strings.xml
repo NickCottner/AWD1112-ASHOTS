@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="tvTitle">Rectangle Calculator</string>
+    <string name="heightHINT">Input Height</string>
+    <string name="widthHINT">Input Width</string>
+    <string name="tvResultsHINT">Display Results Here</string>
+    <string name="btnCalculate">Calculate</string>
+    <string name="btnClear">Clear</string>
+    <string name="btnExit">Exit</string>
+</resources>
