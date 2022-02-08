@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvMainActivityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/tvMainTitle"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerRegionOne"
+        android:layout_width="138dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivConversion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMainActivityTitle" />
+
+    <Spinner
+        android:id="@+id/spinnerRegionTwo"
+        android:layout_width="138dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivConversion"
+        app:layout_constraintTop_toBottomOf="@+id/tvMainActivityTitle" />
+
+    <ImageView
+        android:id="@+id/ivConversion"
+        android:layout_width="71dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/ivConversionSymbol"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerRegionTwo"
+        app:layout_constraintStart_toEndOf="@+id/spinnerRegionOne"
+        app:layout_constraintTop_toBottomOf="@+id/tvMainActivityTitle"
+        app:srcCompat="@drawable/convesion"
+        tools:ignore="ImageContrastCheck" />
+
+    <EditText
+        android:id="@+id/etCurrencyOne"
+        android:layout_width="144dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/etCurrencyHint"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnConvert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerRegionOne" />
+
+    <EditText
+        android:id="@+id/etCurrencyTwo"
+        android:layout_width="144dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="@string/etCurrencyHint"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnConvert"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerRegionTwo"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="73dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/btnConvert"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/etCurrencyTwo"
+        app:layout_constraintStart_toEndOf="@+id/etCurrencyOne"
+        app:layout_constraintTop_toBottomOf="@+id/ivConversion"
+        tools:ignore="TextContrastCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

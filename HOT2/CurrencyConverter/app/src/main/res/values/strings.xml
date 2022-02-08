@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="splashScreenTitle">World Currencies</string>
+    <string name="tvAuthor">By: Nick Cottner</string>
+    <string name="ivSplashScreenDescription">Flags of The World</string>
+    <string name="tvMainTitle">Currency Converter</string>
+    <string name="btnConvert">Calc</string>
+    <string name="ivConversionSymbol">ConversionSymbol</string>
+    <string name="etCurrencyHint">Enter Number</string>
+</resources>

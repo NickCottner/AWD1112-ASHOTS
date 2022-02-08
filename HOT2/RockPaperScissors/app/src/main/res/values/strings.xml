@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Rock Paper Scissors</string>
+
+    <string name="tvSplashScreenTitle">Are You Rock? Are You Paper? Are You Scissors?</string>
+    <string name="tvGameTitle">Rock, Paper, Scissors</string>
+    <string name="tvPlayerWinsTitle">Player Wins:</string>
+    <string name="tvComputerWinsTitle">Computer Wins:</string>
+    <string name="tvTiesTitle">Number Of Ties:</string>
+    <string name="tvHelpScreenTitle">Rules and Regulations</string>
+    <string name="btnReturnToGame">Return to Game</string>
+    <string name="tvTotalsTitle">Total Wins and Total Ties</string>
+    <string name="tvTotPlayerWinsHINT">Player Wins Show Here</string>
+    <string name="tvTotComputerWinsHINT">Computer Wins Show Here</string>
+    <string name="tvTotTiesHINT">Total Ties Show Here</string>
+
+    <string name="ivHowToWinContentDescription">How to Win</string>
+    <string name="splashScreenIvContentDescription">This is Rock, Paper, or Scissors</string>
+    <string name="ivPlayerContentDescription">Player One Controller</string>
+    <string name="ivComputerContentDescription">Player Two Controller</string>
+    <string name="ivRockContentDescription">Rock</string>
+    <string name="ivPaperContentDescription">Paper</string>
+    <string name="ivScissorsContentDescription">Scissors</string>
+
+    <string name="btnRules">Rules</string>
+    <string name="btnTotals">Totals</string>
+    <string name="btnRestart">Restart</string>
+    <string name="tvPlayer">Player</string>
+    <string name="tvComputer">Computer</string>
+    <string name="tvNumPlayerWins">0</string>
+    <string name="tvNumComputerWins">0</string>
+    <string name="tvNumTies">0</string>
+</resources>
