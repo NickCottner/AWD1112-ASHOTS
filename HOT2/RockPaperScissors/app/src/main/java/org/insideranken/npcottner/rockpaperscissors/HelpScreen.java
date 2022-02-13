@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class HelpScreen extends AppCompatActivity {
-    Button btnReturnToGame;
+    Button btnHelpReturnToGame;
     TextView tvRules;
 
     @Override
@@ -17,7 +17,7 @@ public class HelpScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help_screen);
 
-        btnReturnToGame = findViewById(R.id.btnReturnToGame);
+        btnHelpReturnToGame = findViewById(R.id.btnHelpReturnToGame);
         tvRules = findViewById(R.id.tvRules);
 
         tvRules.setText("1. Player Chooses First" +
@@ -25,7 +25,7 @@ public class HelpScreen extends AppCompatActivity {
                         "\n#. After Choosing Your Suit, The Computer Chooses" +
                         "\n4. How To Win, is Displayed Below");
 
-        btnReturnToGame.setOnClickListener(new View.OnClickListener()
+        btnHelpReturnToGame.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)

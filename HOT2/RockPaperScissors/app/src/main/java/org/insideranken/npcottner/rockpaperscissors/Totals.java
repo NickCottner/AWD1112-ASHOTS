@@ -12,7 +12,7 @@ import org.w3c.dom.Text;
 
 public class Totals extends AppCompatActivity {
 
-    Button btnReturnToGame;
+    Button btnTotalsReturnToGame;
     TextView tvTotNumPlayerWins;
     TextView tvTotNumComputerWins;
     TextView tvTotalNumTies;
@@ -30,7 +30,7 @@ public class Totals extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_totals);
-        btnReturnToGame = findViewById(R.id.btnReturnToGame);
+        btnTotalsReturnToGame = findViewById(R.id.btnTotalsReturnToGame);
         tvTotNumPlayerWins = findViewById(R.id.tvTotNumPlayerWins);
         tvTotNumComputerWins = findViewById(R.id.tvTotNumComputerWins);
         tvTotalNumTies = findViewById(R.id.tvTotalNumTies);
@@ -61,7 +61,7 @@ public class Totals extends AppCompatActivity {
         tvTotNumComputerWins.setText(computerWins);
         tvTotalNumTies.setText(ties);
 
-        btnReturnToGame.setOnClickListener(new View.OnClickListener()
+        btnTotalsReturnToGame.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
