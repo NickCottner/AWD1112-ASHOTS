@@ -20,24 +20,20 @@ public class helpScreen extends AppCompatActivity {
         tvInstructions = findViewById(R.id.tvInstructions);
         btnHelpReturnHome = findViewById(R.id.btnHelpReturnHome);
 
-        tvInstructions.setText("1. Choose What Nation You Want to Convert Your Currency From" +
-                               "\n2.Choose What Nation You Want To Convert Your Currency To" +
-                               "\n3.Enter An Amount To Convert In The Text Box Reading " +
-                               "\n\tEnter An Amount > 0 To Convert" +
+        tvInstructions.setText("1. Enter An Amount To Convert In EditText Below Currency Converter" +
+                               "\n2. Choose What Nation To Convert From" +
+                                "\n3. Choose What Nation To Convert To" +
                                "\n4. Click The Button That Says Convert" +
-                               "\n5. Conversion Will Show In TextView ThaT Says Converted Amount" +
-                                "\n6.Click Help On Activity Main To View These Instructions Again" +
-                                "\n7.Finally Click Totals To View Total Conversions of Each Currency");
+                               "\n5. Conversion Will Show In Conversion Shows Here" +
+                                "\n6. Click Help On Activity Main To View These Instructions Again" +
+                                "\n7. Finally Click Totals To View Total Conversions of Each Currency");
 
-        btnHelpReturnHome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        btnHelpReturnHome.setOnClickListener(v -> {
+            Intent helpReturnIntent = new Intent(getApplicationContext(), MainActivity.class);
 
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-                finish();
-            }
+            helpReturnIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(helpReturnIntent);
+            finish();
         });
     }
 }

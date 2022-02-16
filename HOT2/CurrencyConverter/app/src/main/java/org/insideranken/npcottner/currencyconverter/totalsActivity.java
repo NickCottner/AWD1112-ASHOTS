@@ -24,6 +24,13 @@ public class totalsActivity extends AppCompatActivity {
     int totalNairaConversions;
     int totalNzdConvervsions;
 
+    String yenConversions;
+    String euroConversions;
+    String dirhamConversions;
+    String nairaConversions;
+    String nzdConversions;
+    String usConversions;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,55 +47,46 @@ public class totalsActivity extends AppCompatActivity {
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
 
-        if(extras != null)
-        {
-            if (extras.containsKey("totalUsConversions"))
-            {
+        if (extras != null) {
+            if (extras.containsKey("totalUsConversions")) {
                 totalUsConversions = extras.getInt("totalUsConversions", 0);
             }
-            if (extras.containsKey("totalEuroConversions"))
-            {
+            if (extras.containsKey("totalEuroConversions")) {
                 totalEuroConversions = extras.getInt("totalEuroConversions", 0);
             }
-            if (extras.containsKey("totalDirhamConversions"))
-            {
+            if (extras.containsKey("totalDirhamConversions")) {
                 totalDirhamConversions = extras.getInt("totalDirhamConversions", 0);
             }
-            if (extras.containsKey("totalYenConversions"))
-            {
+            if (extras.containsKey("totalYenConversions")) {
                 totalYenConversions = extras.getInt("totalYenConversions", 0);
             }
-            if (extras.containsKey("totalNairaConversions"))
-            {
+            if (extras.containsKey("totalNairaConversions")) {
                 totalNairaConversions = extras.getInt("totalNairaConversions", 0);
             }
-            if (extras.containsKey("totalNzdConvervsions"))
-            {
+            if (extras.containsKey("totalNzdConvervsions")) {
                 totalNzdConvervsions = extras.getInt("totalNzdConvervsions", 0);
             }
         }
-        playerWins = "Total Player Wins: " + totalPlayerWins;
-        computerWins = "Total Computer Wins: " + totalComputerWins;
-        ties = "Total Ties: " + totalTies;
+        yenConversions = "Total Japanese Yen Converions: " + totalYenConversions;
+        usConversions = "Total US Dollar Converions: " + totalUsConversions;
+        euroConversions = "Total Euro Converions: " + totalEuroConversions;
+        nzdConversions = "Total New Zealand Dollar Converions: " + totalNzdConvervsions;
+        nairaConversions = "Total Nigerian Naira Converions: " + totalNairaConversions;
+        dirhamConversions = "Total Dubai Dirham Converions: " + totalDirhamConversions;
 
-        tvTotNumPlayerWins.setText(playerWins);
-        tvTotNumComputerWins.setText(computerWins);
-        tvTotalNumTies.setText(ties);
+        tvNzdConversions.setText(nzdConversions);
+        tvYenConversions.setText(yenConversions);
+        tvUsConversions.setText(usConversions);
+        tvNairaConversions.setText(nairaConversions);
+        tvEuroConversions.setText(euroConversions);
+        tvDubaiConversions.setText(dirhamConversions);
 
-        btnTotalsReturnToConverter.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        btnTotalsReturnToConverter.setOnClickListener(v -> {
+            Intent totalsReturnIntent = new Intent(getApplicationContext(), MainActivity.class);
 
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-                finish();
-            }
-
+            totalsReturnIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(totalsReturnIntent);
+            this.finish();
         });
     }
-
-}
 }

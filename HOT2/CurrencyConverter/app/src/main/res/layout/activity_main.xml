@@ -8,6 +8,59 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tvRFTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/spinnerOneTvTitle"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.276"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAmountToConvert" />
+
+    <Spinner
+        android:id="@+id/spinnerRegionFromCurrency"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRFTitle"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvRTTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="112dp"
+        android:text="@string/spinnerTwoTvTitle"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAmountToConvert" />
+
+    <Spinner
+        android:id="@+id/spinnerRegionToCurrency"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toEndOf="@+id/spinnerRegionFromCurrency"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRTTitle"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
         android:id="@+id/tvMainActivityTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,143 +81,84 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="17dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="@color/white"
         android:text="@string/btnConvert"
         android:textAlignment="center"
-        android:textColor="@android:color/holo_green_dark"
+        android:textColor="@color/design_default_color_primary_dark"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etAmountToConvert"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerRegionFromCurrency"
         tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/btnHelp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="48dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="135dp"
         android:backgroundTint="@color/white"
         android:text="@string/btnHelp"
         android:textAlignment="center"
-        android:textColor="@android:color/holo_green_dark"
+        android:textColor="@color/design_default_color_primary_variant"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/btnTotals"
-        tools:ignore="TextContrastCheck"
-        tools:layout_editor_absoluteY="402dp" />
+        app:layout_constraintEnd_toEndOf="@+id/btnConvert"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerRegionFromCurrency"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/btnTotals"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="96dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="17dp"
         android:backgroundTint="@color/white"
         android:text="@string/btnTotals"
         android:textAlignment="center"
-        android:textColor="@android:color/holo_green_dark"
+        android:textColor="@color/design_default_color_primary_dark"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvConvertedAmount"
+        app:layout_constraintStart_toEndOf="@+id/btnConvert"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerRegionToCurrency"
         tools:ignore="TextContrastCheck" />
-
-    <TextView
-        android:id="@+id/tvROTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/spinnerOneTvTitle"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMainActivityTitle" />
-
-    <TextView
-        android:id="@+id/tvRTTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:text="@string/spinnerTwoTvTitle"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMainActivityTitle" />
-
-    <Spinner
-        android:id="@+id/spinnerRegionFromCurrency"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvROTitle" />
-
-    <Spinner
-        android:id="@+id/spinnerRegionToCurrency"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="76dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvRTTitle" />
-
-    <TextView
-        android:id="@+id/tvAmountToConvert"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="32dp"
-        android:text="@string/etCurrencyHint"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerRegionFromCurrency" />
 
     <EditText
         android:id="@+id/etAmountToConvert"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="331dp"
+        android:layout_height="55dp"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="@string/etAmountHINT"
+        android:importantForAutofill="no"
         android:inputType="number"
         android:textAlignment="center"
+        android:textColor="@color/design_default_color_primary_dark"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvAmountToConvert" />
-
-    <TextView
-        android:id="@+id/tvConversion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="105dp"
-        android:text="@string/tvConversion"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnConvert" />
+        app:layout_constraintTop_toBottomOf="@+id/tvMainActivityTitle"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/tvConvertedAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:hint="@string/etConversionHint"
         android:textAlignment="center"
+        android:textColor="@color/design_default_color_primary_dark"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvConversion" />
+        app:layout_constraintTop_toBottomOf="@+id/btnConvert"
+        tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,8 +4,8 @@
     <string name="tvAuthor">By: Nick Cottner</string>
     <string name="ivSplashScreenDescription">Flags of The World</string>
     <string name="tvMainTitle">Currency Converter</string>
-    <string name="spinnerOneTvTitle">Convert From</string>
-    <string name="spinnerTwoTvTitle">Converted To</string>
+    <string name="spinnerOneTvTitle">From</string>
+    <string name="spinnerTwoTvTitle">To</string>
     <string name="tvTotalsTitle">Total Conversions For Each Currency</string>
     <string name="btnConvert">Convert</string>
     <string name="tvHelpScreenTitle">How To Operate The Converter</string>
@@ -13,7 +13,7 @@
     <string name="etAmountHINT">Enter An Amount > 0 To Convert</string>
     <string name="etCurrencyHint">Amount to Convert</string>
     <string name="tvConversion">Conversion</string>
-    <string name="etConversionHint">Converted Amount</string>
+    <string name="etConversionHint">Conversion Shows Here</string>
     <string name="tvInstructionsHINT">Instructions Will Show Here</string>
     <string name="totDubaiConversions">Dubai Dirham Conversions Show Here</string>
     <string name="totUSConversions">US Dollar Conversions Show Here</string>
@@ -23,20 +23,4 @@
     <string name="totNzdConversions">New Zealand Dollar Conversions Show Here</string>
     <string name="btnHelp">Help</string>
     <string name="btnTotals">Totals</string>
-    <string-array name="regionOneSpinner">
-        <item>Us Dollar USD</item>
-        <item>Dubai Dirham AED</item>
-        <item>Europeam Euro EUR</item>
-        <item>New Zealand Dollar NZD</item>
-        <item>Nigerian Naira NGN</item>
-        <item>Japanese Yen JPY</item>
-    </string-array>
-    <string-array name="regionTwoSpinner">
-        <item>Japanese Yen JPY</item>
-        <item>Nigerian Naira NGN</item>
-        <item>New Zealand Dollar NZD</item>
-        <item>European Euro EUR</item>
-        <item>Dubai Dirham AED</item>
-        <item>US Dollar USD</item>
-    </string-array>
 </resources>
