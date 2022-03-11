@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity{
     RecyclerView.LayoutManager layoutManager;
     Menu menu;
 
-    //List that holds all the presidents that will be viewed via recyclerview
     List<Employee> employeeList;
 
     MyApplication myApplication = (MyApplication) this.getApplication();
@@ -35,6 +34,8 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        myApplication.checkIfFirstTimeInitiate();
         employeeList = MyApplication.getEmployeeList();
 
         //  Get references to widgets
@@ -42,7 +43,7 @@ public class MainActivity extends AppCompatActivity{
         recyclerView     = findViewById(R.id.rvEmployees);
 
         recyclerView.setHasFixedSize(true);
-        layoutManager = new LinearLayoutManager(this);
+        layoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(layoutManager);
 
         //Adapter creates Viewholder objects as needed and sets the data for those views.
