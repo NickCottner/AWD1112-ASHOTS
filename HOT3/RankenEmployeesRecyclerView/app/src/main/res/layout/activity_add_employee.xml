@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/rankenWhite"
+    android:background="@color/white"
     tools:context=".AddEmployee">
 
     <TextView
@@ -84,9 +84,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:layout_marginTop="24dp"
-        android:backgroundTint="@color/material_dynamic_primary80"
+        android:backgroundTint="@color/babyBlue"
         android:text="@string/btnAddEditEmployeeAdd"
-        android:textColor="@color/rankenWhite"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEmployeeImage"
         tools:ignore="TextContrastCheck" />
@@ -97,9 +97,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="80dp"
-        android:backgroundTint="@color/material_dynamic_primary80"
+        android:backgroundTint="@color/babyBlue"
         android:text="@string/btnAddEditEmployeeCancel"
-        android:textColor="@color/rankenWhite"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEmployeeImage"
         tools:ignore="TextContrastCheck" />
@@ -185,9 +185,9 @@
         android:id="@+id/btnAddEmployeeReturnHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/material_dynamic_primary80"
+        android:backgroundTint="@color/babyBlue"
         android:text="@string/btnReturnHome"
-        android:textColor="@color/rankenWhite"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAddEmployeeAdd"

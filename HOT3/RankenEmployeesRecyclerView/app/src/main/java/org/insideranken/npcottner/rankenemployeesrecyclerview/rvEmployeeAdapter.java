@@ -35,10 +35,8 @@ public class rvEmployeeAdapter extends RecyclerView.Adapter<rvEmployeeAdapter.My
     {
         // Create a new view, which defines the UI of the list item
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.activity_individual_employee, parent, false);
-        MyViewHolder holder = new MyViewHolder(view);
-
-        return holder;
+                .inflate(R.layout.row_layout, parent, false);
+        return new MyViewHolder(view);
     }
 
     // Replace the contents of a view (invoked by the layout manager)

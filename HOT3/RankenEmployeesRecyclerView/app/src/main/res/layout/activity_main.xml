@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/material_dynamic_primary80"
+    android:background="@color/babyBlue"
     tools:context=".MainActivity">
 
     <Button
@@ -12,8 +12,7 @@
         style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/rankenWhite"
+        android:backgroundTint="@color/white"
         android:text="@string/btnAddEditEmployees"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -21,19 +20,16 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rvEmployees"
-        app:strokeColor="@color/rankenWhite" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/white" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvEmployees"
         android:layout_width="409dp"
-        android:layout_height="673dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="58dp"
-        android:background="@color/rankenWhite"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="681dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/btnAddEmployee" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

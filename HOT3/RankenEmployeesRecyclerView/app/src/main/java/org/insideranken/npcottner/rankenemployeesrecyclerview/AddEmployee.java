@@ -40,12 +40,10 @@ public class AddEmployee extends AppCompatActivity {
         employeeId = intent.getIntExtra("id", -1);
         Employee employee = null;
 
-        employeeList = MyApplication.getEmployeeList();
+        employeeList = myApplication.getEmployeeList();
 
         if (employeeId >= 0)
         {
-            //  Edit an existing President
-            //  Find the President
             for (Employee e: employeeList) {
                 if (e.getEmployeeId() == employeeId)
                 {

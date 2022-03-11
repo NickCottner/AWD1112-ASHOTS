@@ -1,5 +1,6 @@
 package org.insideranken.npcottner.rankenemployeesrecyclerview;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -16,7 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.Collections;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
     // Declare Widgets
     Button btnAddEmployee;
     RecyclerView recyclerView;
@@ -34,19 +35,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        employeeList = myApplication.getEmployeeList();
+        employeeList = MyApplication.getEmployeeList();
 
         //  Get references to widgets
         btnAddEmployee  = findViewById(R.id.btnAddEmployee);
         recyclerView     = findViewById(R.id.rvEmployees);
 
         recyclerView.setHasFixedSize(true);
-
-        //implementation which provides similar functionality to ListView - will list the presidents
-        //layout manager arranges the items in the Recyclerview - Recyclerview library provides
-        // three layout managers:  LinearLayoutManager, GridLayoutManager, and
-        // Staggered Grid Layout Manager.  LinearLayoutManager arranges items in
-        // a one-dimensional list.
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
@@ -64,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
     // Creates menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

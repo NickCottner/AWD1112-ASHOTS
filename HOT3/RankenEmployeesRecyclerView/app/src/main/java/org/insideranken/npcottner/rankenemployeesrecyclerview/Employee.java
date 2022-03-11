@@ -8,7 +8,7 @@ public class Employee {
     String employeeDepartment;
     String employeeImage;
 
-    public Employee(Integer employeeId, String employeeName, String employeeDepartment,
+    public Employee(int employeeId, String employeeName, String employeeDepartment,
                     String employeeImage) {
         this.employeeId = employeeId;
         this.employeeName = employeeName;
@@ -16,11 +16,11 @@ public class Employee {
         this.employeeImage = employeeImage;
     }
 
-    public Integer getEmployeeId() {
+    public int getEmployeeId() {
         return employeeId;
     }
 
-    public void setEmployeeId(Integer employeeId) {
+    public void setEmployeeId(int employeeId) {
         this.employeeId = employeeId;
     }
 
@@ -50,7 +50,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "employeeModel{" +
+        return "employee{" +
                 "employeeId='" + employeeId + '\'' +
                 ", employeeName='" + employeeName + '\'' +
                 ", employeeDepartment='" + employeeDepartment + '\'' +
