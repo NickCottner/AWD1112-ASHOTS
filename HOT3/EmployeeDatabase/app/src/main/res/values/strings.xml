@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">EmployeeDatabase</string>
+
+    //Splash Screen
+    <string name="tvSplashScreenTitle">Dolphins Employee Database</string>
+    <string name="ivSplashScreenContentDescription">Dolphins Logo</string>
+    <string name="tvSplashScreenProjectAuthor">By Nick Cottner</string>
+
+    //Main
+    <string name="btnAddEmployee">Add Employee</string>
+
+    //Update Employee Activity
+    <string name="tvIndividualActivityTitle">Update Dolphin Employee</string>
+    <string name="tvIndEmployeeIDTitle">Employee Id:</string>
+    <string name="tvIndEmployeeDeptTitle">Department:</string>
+    <string name="tvIndEmployeeImageUrlTitle">Image URL:</string>
+    <string name="tvIndEmployeeNameTitle">Name:</string>
+    <string name="theNameHint">Employee Name</string>
+    <string name="theIDHint">Employee ID</string>
+    <string name="theDeptHint">Employee Department</string>
+    <string name="theImageURLHint">Employee Image Url</string>
+    <string name="btnUpdateEmployee">Update Employee</string>
+    <string name="btnReturnToAllEmployeesRv">Return To All Employees</string>
+
+    //Add Employee Activity
+    <string name="btnAddIndividualEmployee">Add Employee</string>
+    <string name="tvAddActivityTitle">Add Dolphin Employee</string>
+    <string name="editTextAddEmployeeNameHINT">Insert Name Here</string>
+    <string name="editTextAddEmployeeDeptHINT">Insert Department Here</string>
+    <string name="editTextAddEmployeeIdHINT">Insert ID Here</string>
+
+
+    //Row Layout for Recycler View
+    <string name="ivContentDescription">An Image of An Employee</string>
+    <string name="tvEmployeeName">Name</string>
+    <string name="tvEmployeeId">ID</string>
+    <string name="tvEmployeeDepartment">Department</string>
+
+    //Submenu Strings
+    <string name="subMenuEmployeeSearchTitle">Employee Search</string>
+    <string name="subMenuEmployeeSearchAscendingTitle">All Employees Ascending</string>
+    <string name="subMenuEmployeeSearchDescendingTitle">All Employees Descending</string>
+    <string name="subMenuDepartmentSearchTitle">Department Search</string>
+    <string name="subMenuDepartmentSearchAscendingTitle">All Departments Ascending</string>
+    <string name="subMenuDepartmentSearchDescendingTitle">All Departments Descending</string>
+
+</resources>

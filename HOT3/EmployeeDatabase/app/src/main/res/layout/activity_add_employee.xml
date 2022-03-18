@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/SteelBlue"
+    tools:context=".AddEmployee">
+
+    <TextView
+        android:id="@+id/tvAddEmployeeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/tvAddActivityTitle"
+        android:textAlignment="center"
+        android:textColor="@color/NeonBlue"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/etAddTheID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="175dp"
+        android:ems="10"
+        android:hint="@string/editTextAddEmployeeIdHINT"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/BabyBlue"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAddTheName"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/etAddTheName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="175dp"
+        android:ems="10"
+        android:hint="@string/editTextAddEmployeeNameHINT"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/BabyBlue"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddEmployeeTitle"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/etAddTheDEPT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="175dp"
+        android:ems="10"
+        android:hint="@string/editTextAddEmployeeDeptHINT"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/BabyBlue"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAddTheID"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/btnAddEmployee"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/btnAddIndividualEmployee"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/BabyBlue"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivAddNewEmployeeImage"
+        app:strokeColor="@color/NeonBlue"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/btnAddReturnToAllEmployees"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/btnReturnToAllEmployeesRv"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/BabyBlue"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddEmployee"
+        app:strokeColor="@color/NeonBlue"
+        app:strokeWidth="3dp" />
+
+    <ImageView
+        android:id="@+id/ivAddNewEmployeeImage"
+        android:layout_width="142dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/ivContentDescription"
+        app:layout_constraintStart_toEndOf="@+id/etAddTheID"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddEmployeeTitle"
+        app:srcCompat="@drawable/insertimage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
