@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/employeeSearch"
+        android:title="@string/subMenuEmployeeSearchTitle"
+        app:showAsAction="never">
+        <menu>
+            <item android:id="@+id/employeeSearchAscending"
+                android:title="@string/subMenuEmployeeSearchAscendingTitle"/>
+            <item android:id="@+id/employeeSearchDescending"
+                android:title="@string/subMenuEmployeeSearchDescendingTitle"/>
+        </menu>
+    </item>
+    <item android:id="@+id/departmentSearch"
+        android:title="@string/subMenuDepartmentSearchTitle"
+        app:showAsAction="never">
+        <menu>
+            <item android:id="@+id/departmentSearchAscending"
+                android:title="@string/subMenuDepartmentSearchAscendingTitle"/>
+            <item android:id="@+id/departmentSearchDescending"
+                android:title="@string/subMenuDepartmentSearchDescendingTitle"/>
+        </menu>
+    </item>
+
+</menu>
