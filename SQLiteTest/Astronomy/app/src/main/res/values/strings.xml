@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Astronomy</string>
+    <string name="splash_screen_title">Constellations and Our Solar System</string>
+    <string name="hyperlink"><a href="https://osr.org/constellations/">To Know Constellation Information Click This Link</a></string>
+
+    <string name="btnUpdate">Update Constellation</string>
+    <string name="btnDelete">Delete Constellation</string>
+    <string name="etUpdateNameHINT">Update Name of Constellation</string>
+    <string name="etUpdateFamilyHINT">Update Constellation Family</string>
+    <string name="etUpdateLatitudeHINT">Update Latitude It Can Bee Seen From</string>
+    <string name="etUpdateBestSeenHINT">Update Month When Best Seen</string>
+
+    <string name="btnAdd">Add Constellation</string>
+    <string name="etAddNameHINT">Input Name of Constellation</string>
+    <string name="etAddFamilyHINT">Input Constellation Family</string>
+    <string name="etAddLatitudeHINT">Input Latitude It Can Bee Seen From</string>
+    <string name="etAddBestSeenHINT">Input Month When Best Seen</string>
+
+    <string name="row_layout_Name">Name</string>
+    <string name="row_layout_Family">Family</string>
+    <string name="row_layout_latitude">Latitude</string>
+    <string name="row_layout_month">Month</string>
+</resources>
