@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:id="@+id/tvPlayerTitle"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tvPlayerTitle"
+        android:textAlignment="center"
+        android:textColor="@color/gold"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvComputerTitle"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/tvComputerTitle"
+        android:textAlignment="center"
+        android:textColor="@color/gold"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvVersusTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/tvVersusTitle"
+        android:textAlignment="center"
+        android:textColor="@color/gold"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvComputerTitle"
+        app:layout_constraintStart_toEndOf="@+id/tvPlayerTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivPlayerImage"
+        android:layout_width="131dp"
+        android:layout_height="246dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/ivPlayerImageContentDesc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlayerTitle"
+        app:srcCompat="@drawable/controller" />
+
+    <ImageView
+        android:id="@+id/ivComputerImage"
+        android:layout_width="131dp"
+        android:layout_height="246dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvComputerTitle"
+        app:srcCompat="@drawable/controller"
+        android:contentDescription="@string/ivComputerContentDesc" />
+
+    <ImageView
+        android:id="@+id/ivPaper"
+        android:layout_width="83dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivComputerImage"
+        app:layout_constraintStart_toEndOf="@+id/ivPlayerImage"
+        app:layout_constraintTop_toBottomOf="@+id/tvVersusTitle"
+        app:srcCompat="@drawable/paper"
+        android:contentDescription="@string/ivPaperContentDesc" />
+
+    <ImageView
+        android:id="@+id/ivRock"
+        android:layout_width="83dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivComputerImage"
+        app:layout_constraintStart_toEndOf="@+id/ivPlayerImage"
+        app:layout_constraintTop_toBottomOf="@+id/ivPaper"
+        app:srcCompat="@drawable/rock"
+        android:contentDescription="@string/ivRockContentDesc" />
+
+    <ImageView
+        android:id="@+id/ivScissors"
+        android:layout_width="83dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/ivScissorsContentDesc"
+        app:layout_constraintEnd_toStartOf="@+id/ivComputerImage"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toEndOf="@+id/ivPlayerImage"
+        app:layout_constraintTop_toBottomOf="@+id/ivRock"
+        app:srcCompat="@drawable/scissors" />
+
+    <Button
+        android:id="@+id/btnTotalsGameActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/btnTotalsOnGameActivity"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivScissors" />
+
+    <Button
+        android:id="@+id/btnRestartGameActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/btnRestart"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTotalsGameActivity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

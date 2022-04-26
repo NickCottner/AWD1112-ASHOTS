@@ -16,10 +16,10 @@
             android:name=".helpScreen"
             android:exported="false" />
         <activity
-            android:name=".splashScreen"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".splashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

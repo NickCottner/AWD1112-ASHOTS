@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">RPS For Portfolio</string>
+    <string name="btnPlay">Let\'s Play</string>
+    <string name="btnHelp">View Instructions To Play</string>
+    <string name="instructionsHint">Instructions Will Show Here On App Run</string>
+    <string name="tvSplashScreenHelpText">Click Button Above To Move On In App</string>
+    <string name="contentDescriptionGif">Gif Image of Rock Paper Scissors</string>
+    <string name="tvInstructionsTitle">Game Instructions &amp; How To Win</string>
+    <string name="contentDescForHowToWinImageview">TODO</string>
+    <string name="tvRuleOne">1. Player Chooses First</string>
+    <string name="tvTitleForInstructionsList">Instructions</string>
+    <string name="tvHowToWinTitle">How To Win</string>
+    <string name="tvRuleTwo">2. Computer Chooses After Player</string>
+    <string name="tvRuleThree">3. Choose One of Three Images For RPS</string>
+    <string name="tvGameTitle">Rock vs Paper vs Scissors</string>
+    <string name="tvPlayerTitle">Player</string>
+    <string name="tvVersusTitle">vs</string>
+    <string name="tvComputerTitle">Computer</string>
+    <string name="ivPlayerImageContentDesc">Player Image</string>
+    <string name="ivScissorsContentDesc">Image of Scissor Clipart</string>
+    <string name="ivComputerContentDesc">Computer Image</string>
+    <string name="ivPaperContentDesc">Image of Paper Clipart</string>
+    <string name="ivRockContentDesc">Image of Rock Clipart</string>
+    <string name="btnTotalsOnGameActivity">View Total Wins and Ties</string>
+    <string name="btnRestart">Restart Game</string>
+    <string name="tvPlayerWinsTitle">Player Wins:</string>
+    <string name="tvComputerWinsTitle">Computer Wins:</string>
+    <string name="tvTiesTitle">Ties:</string>
+    <string name="tvTheUserWinsHint">User Wins Show Here</string>
+    <string name="tvTheComputerWinsHint">Computer Wins Show Here</string>
+    <string name="tvTheTies">Ties Show Here</string>
+    <string name="ivTotalsContentDesc">Game Over Gif</string>
+    <string name="btnReturnHome">Return Home</string>
+    <string name="ivSplashScreenContentDesc">TODO</string>
+</resources>

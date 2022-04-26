@@ -1,5 +1,6 @@
 package org.insideranken.npcottner.rockpaperscissors;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -15,7 +16,6 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-
         mHandler = new Handler();
 
         mRunnable = new Runnable() {
@@ -32,4 +32,5 @@ public class SplashScreen extends AppCompatActivity {
         mHandler.postDelayed(mRunnable, 5000);
 
     }
+
 }
